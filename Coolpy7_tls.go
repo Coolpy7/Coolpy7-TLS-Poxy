@@ -51,7 +51,7 @@ func main() {
 		}
 	}()
 
-	log.Printf("proxy is listening on %q", *addr)
+	log.Printf("Coolpy7 TLS proxy is listening on %q", *addr)
 	signalChan := make(chan os.Signal, 1)
 	cleanupDone := make(chan bool)
 	signal.Notify(signalChan, os.Interrupt)
