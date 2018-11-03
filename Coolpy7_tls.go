@@ -13,8 +13,8 @@ import (
 
 func main() {
 	var (
-		addr    = flag.String("listen", ":8883", "port to listen")
-		tcpAddr = flag.String("tcp_addr", "127.0.0.1:1883", "ws tcp addr to proxy pass")
+		addr    = flag.String("l", ":8883", "port to listen")
+		tcpAddr = flag.String("r", "127.0.0.1:1883", "bridge to Coolpy7 core addr")
 	)
 	flag.Parse()
 
